@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+.display-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    border-radius: 25px;
+}
+
+.refresh-btn {
+    background-color: #d41414;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

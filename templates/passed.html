@@ -8,8 +8,26 @@
 </head>
 
 <body>
-    <h1>{{ query }}</h1>
-    {{ list }}
+    <!-- <h1>{{ query }}</h1> -->
+    <center><h1 style="color: rgb(230, 230, 230); font-family: 'Optima', sans-serif;">{{ loc_name }}</h1></center>
+    <!-- <br><a href="{{ link }}" target="_blank">Maps Link</a><br> -->
+    <a href="{{ link }}" target="_blank">
+        <img class="display-image" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference={{ photo_ref }}&key={{ API_KEY }}">
+    </a>
+    <br>
+    <center>
+        <p style="color: rgb(230, 230, 230); font-family: 'Optima', sans-serif;">
+            Open Status: {{ open_status }}<br>
+            Rating: {{ rating }}<br>
+            Location: {{ vicinity }}<br>
+        </p>
+    </center>
+    <center>
+        <button class="refresh-btn" onClick="window.location.reload();">
+            <p style="color: rgb(255, 255, 255); font-family: 'Optima', sans-serif;">Refresh</p>
+        </button>
+    </center>
+    
 </body>
 
 </html>
