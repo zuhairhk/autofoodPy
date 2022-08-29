@@ -61,7 +61,7 @@ def main(query):
     next_page_token = response.get('next_page_token')
 
     while next_page_token:
-        time.sleep(1)
+        time.sleep(2)
         response = map_client.places_nearby(
             location=loc,
             keyword=search_string,
@@ -76,7 +76,7 @@ def main(query):
     df['url'] = 'https://www.google.com/maps/place/?q=place_id:' + df['place_id']
 
     # df.to_excel('response_list.xlsx', index=False)
-    print(df)
+    # print(df)
 
     return (
         restaruant_list,

@@ -3,17 +3,30 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Auto Food</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style.css">
+    <title>Auto Food</title>
 </head>
 
 <body>
     <!-- <h1>{{ query }}</h1> -->
+    <div class="back-div">
+        <button class="back-btn">
+            <p style="color: rgb(255, 255, 255); font-family: 'Optima', sans-serif;">Back</p>
+        </button>
+    </div>
+    
     <center><h1 style="color: rgb(230, 230, 230); font-family: 'Optima', sans-serif;">{{ loc_name }}</h1></center>
     <!-- <br><a href="{{ link }}" target="_blank">Maps Link</a><br> -->
-    <a href="{{ link }}" target="_blank">
-        <img class="display-image" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference={{ photo_ref }}&key={{ API_KEY }}">
-    </a>
+    <div>
+        <a href="{{ link }}" target="_blank">
+            <center>
+                <img class="display-image" alt="Display Picture" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference={{ photo_ref }}&key={{ API_KEY }}">
+            </center>
+        </a>
+    </div>
+    
     <br>
     <center>
         <p style="color: rgb(230, 230, 230); font-family: 'Optima', sans-serif;">
